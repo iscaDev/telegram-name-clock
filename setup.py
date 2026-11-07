@@ -27,7 +27,7 @@ async def main():
         me = await client.get_me()
         base = me.first_name or ""
         print(f"Your current first name is: {base}")
-        base = input("Name after the clock (Enter keeps the current first name): ").strip() or base
+        base = input("Name before the clock (Enter keeps the current first name): ").strip() or base
         if not base or len(base) > 50 or any(c in base for c in "\r\n"):
             raise ValueError("Choose a single-line name of 1–50 characters.")
         values = {

@@ -15,7 +15,7 @@ class ClockTests(unittest.IsolatedAsyncioTestCase):
     def test_tashkent_midnight_and_unicode_name(self):
         now = datetime(2026, 11, 7, 19, 4, tzinfo=timezone.utc)
         self.assertEqual(clock.display_name("O‘tkir", ZoneInfo("Asia/Tashkent"), now),
-                         "00:04 | O‘tkir")
+                         "O‘tkir | 00:04")
 
     async def test_only_first_name_is_modified(self):
         client = AsyncMock()

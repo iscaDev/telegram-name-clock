@@ -22,7 +22,7 @@ log = logging.getLogger("name-clock")
 
 def display_name(base, zone, now=None):
     current = now or datetime.now(zone)
-    return f"{current.astimezone(zone):%H:%M} | {base}"
+    return f"{base} | {current.astimezone(zone):%H:%M}"
 
 
 class State:

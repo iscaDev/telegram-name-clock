@@ -1,6 +1,6 @@
 # Telegram name clock
 
-Shows `21:45 | Your Name` in your Telegram first-name field, using Tashkent time.
+Shows `Your Name | 21:45` in your Telegram first-name field, using Tashkent time.
 Your last name is not changed. Premium and AI services are not needed.
 
 The app attempts an update each minute. Telegram can impose a longer wait; the
